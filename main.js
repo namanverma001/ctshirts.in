@@ -4,19 +4,19 @@ import { showProductContainer } from "./homeProductCards";
 import { writeUserData } from "./firebase.js";
 
 
-if(JSON.parse(sessionStorage.getItem('UserData')) == null)
-{
-  window.location.href = 'login.html';
-}
+// if(JSON.parse(sessionStorage.getItem('UserData')) == null)
+// {
+//   window.location.href = 'login.html';
+// }
 
-document.querySelector('.js-logged-user-name')
-  .innerHTML = `Hii!${JSON.parse(sessionStorage.getItem('UserData')).name}`;
+// document.querySelector('.js-logged-user-name')
+//   .innerHTML = `Hii!${JSON.parse(sessionStorage.getItem('UserData')).name}`;
 
-document.querySelector('.js-logout')
-  .addEventListener(('click') , () => {
-    sessionStorage.removeItem('UserData');
-    window.location.reload();
-  })
+// document.querySelector('.js-logout')
+//   .addEventListener(('click') , () => {
+//     sessionStorage.removeItem('UserData');
+//     window.location.reload();
+//   })
 
 // Define a function named `showProductContainer` that takes an array of products as input.
 showProductContainer(products);
