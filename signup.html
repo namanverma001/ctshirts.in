@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-Shirt Shop - Sign Up</title>
+    <link rel="stylesheet" href="styless.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+    <style>
+        body {
+            background: url('signupbackground.jpg') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #00796b; /* Darker shade of green */
+        }
+    </style>
+</head>
+<body>
+    <div class="signup-container">
+        <h2>Create an Account</h2>
+        <!-- <form class="signup-form">
+            <div class="form-group">
+                <i class="fas fa-user"></i>
+                <input class="js-signup-name" type="text" placeholder="Your Full Name" required>
+            </div>
+            <div class="form-group">
+                <i class="fas fa-envelope"></i>
+                <input class="js-signup-email" type="text"   placeholder="Your Email Address" required>
+            </div>
+            <div class="form-group">
+                <i class="fas fa-lock"></i>
+                <input class="js-signup-password" type="password"  placeholder="Choose a Password" required>
+            </div>
+            <div class="form-group">
+                <i class="fas fa-check"></i>
+                <input type="password" placeholder="Confirm Your Password" required>
+            </div>
+            <div class="form-group">
+                <button class="js-signup-submit">Sign Up</button>
+            </div>
+        </form>
+        <p>Already have an account? <a href="login.html">Login here</a></p>
+    </div> -->
+
+    <div>
+        <i class="fas fa-user"></i>
+        <input class="js-name" type="text" placeholder="Name">
+        <br>
+        <i class="fas fa-envelope"></i>
+        <input class="js-email" type="text" placeholder="Email">
+        <br>
+        <i class="fas fa-check"></i>
+        <input class="js-password" type="text" placeholder="Password">
+        <br>
+        <button class="js-submit">Submit</button>
+        <p>Already have an account? <a href="login.html">Login here</a></p>
+
+    </div>
+    <script src="firebase.js" type="module"></script>
+    <script src="lscript.js" type="module"></script>
+
+</body>
+</html>

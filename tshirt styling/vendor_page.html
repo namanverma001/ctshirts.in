@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendor Page</title>
+    <link rel="stylesheet" href="vendor.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Vendor Page</h1>
+        <h2>Customized T-Shirt</h2>
+
+        <div id="customized-image"></div>
+        <div class="info">
+            <img class="image" src="ronaldo.png" alt="">
+            <table>
+                <tr>
+                    <td><strong>Customer Name:</strong></td>
+                    <td id="customer-name"></td>
+                </tr>
+                <tr>
+                    <td><strong>T-Shirt Color:</strong></td>
+                    <td id="tshirt-color"></td>
+                </tr>
+                <tr>
+                    <td><strong>T-Shirt Fabric:</strong></td>
+                    <td id="tshirt-fabric"></td>
+                </tr>
+                <tr>
+                    <td><strong>Custom Design:</strong></td>
+                    <td id="custom-design"></td>
+                </tr>
+                <tr>
+                    <td><strong>Custom Text:</strong></td>
+                    <td id="custom-text"></td>
+                </tr>
+                <tr>
+                    <td><strong>Text Color:</strong></td>
+                    <td id="text-color"></td>
+                </tr>
+                <tr>
+                    <td><strong>Text Font:</strong></td>
+                    <td id="text-font"></td>
+                </tr>
+            </table>
+        </div>
+
+        <label for="price-per-piece">Price per piece:</label>
+        <input type="text" id="price-per-piece">
+
+        <button id="approve-btn">Approve</button>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var urlParams = new URLSearchParams(window.location.search);
+            var filename = urlParams.get('filename');
+            var customerName = urlParams.get('customerName');
+            var tshirtColor = urlParams.get('tshirtColor');
+            var tshirtFabric = urlParams.get('tshirtFabric');
+            var customDesign = urlParams.get('customDesign');
+            var customText = urlParams.get('customText');
+            var textColor = urlParams.get('textColor');
+            var textFont = urlParams.get('textFont');
+
+            var customizedImageHtml = "<img src='C:/Users/naman/Downloads/" + filename + "' alt='Customized T-Shirt Image'>";
+            document.getElementById('customized-image').innerHTML = customizedImageHtml;
+
+            document.getElementById('customer-name').innerText = customerName;
+            document.getElementById('tshirt-color').innerText = tshirtColor;
+            document.getElementById('tshirt-fabric').innerText = tshirtFabric;
+            document.getElementById('custom-design').innerText = customDesign;
+            document.getElementById('custom-text').innerText = customText;
+            document.getElementById('text-color').innerText = textColor;
+            document.getElementById('text-font').innerText = textFont;
+
+            document.getElementById('approve-btn').addEventListener('click', function() {
+                var pricePerPiece = document.getElementById('price-per-piece').value;
+                window.opener.postMessage({ type: 'confirmation', pricePerPiece: pricePerPiece }, '*');
+                window.close();
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+}
+
+.tshirt-section {
+    width: 50%;
+}
+
+.features-section {
+    width: 50%;
+    padding: 20px;
+}
+
+.features-section label,
+.features-section select,
+.features-section input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.features-section button {
+    margin-top: 10px;
+}
+.drawing-area {
+    position: absolute;
+    top: 60px;
+    left: 122px;
+    z-index: 10;
+    width: 200px;
+    height: 400px;
+   
+  }
+ 
+  #tshirt-div {
+    width: 452px;
+    height: 548px;
+    position: relative;
+    background-color: #fff;
+  }

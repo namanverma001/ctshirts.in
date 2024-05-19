@@ -1,0 +1,94 @@
+[
+  {
+    "id": 1,
+    "name": "Wander Lust",
+    "category": "Men",
+    "brand": "Ctshirts",
+    "price": 299.99,
+    "stock": 50,
+    "size":["Small","Medium","Large","X-Large"],
+    "description": "Black 100% cotton Tshirt",
+    "image": "../images/1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Mood Swing Panda",
+    "category": "Men",
+    "brand": "Ctshirts",
+    "price": 299.99,
+    "stock": 100,
+    "size":["Small","Medium","Large","X-Large"],
+    "image": "../images/2.jpg",
+    "description": "White half sleaves tshirt for men"
+  },
+  {
+    "id": 3,
+    "name": "Chillax",
+    "category": "Men",
+    "brand": "Ctshirts",
+    "price": 249.99,
+    "stock": 30,
+    "size":["Small","Medium","Large","X-Large"],
+    "image": "../images/3.jpg",
+    "description": "White half sleaves tshirt for men"
+  },
+  {
+    "id": 4,
+    "name": "Boat Silhoutte",
+    "category": "normal Wear",
+    "brand": "Ctshirts",
+    "price": 299.99,
+    "stock": 20,
+    "size":["Small","Medium","Large","X-Large"],
+    "image": "../images/4.jpg",
+    "description": "Black 100% cotton Tshirt"
+  },
+  {
+    "id": 5,
+    "name": "Itachi Uchiha",
+    "category": "Men",
+    "brand": "Ctshirts",
+    "price": 449.99,
+    "stock": 30,
+    "size":["Small","Medium","Large","X-Large"],
+    "image": "../images/5.jpg",
+    "description": "Black half sleaves 100% cotton Tshirt"
+  },
+  
+  {
+    "id": 6,
+    "name": "Uzumaki Naruto",
+    "category": "Men",
+    "brand": "Ctshirts",
+    "price": 499.99,
+    "stock": 20,
+    "size":["Small","Medium","Large","X-Large"],
+    "image": "../images/6.jpg",
+    "description": "White half sleaves tshirt for men"
+  },
+  {
+    "id": 7,
+    "name": "Batman Shadow",
+    "category": "Men",
+    "brand": "Ctshirts",
+    "price": 499.99,
+    "stock": 20,
+    "size":["Small","Medium","Large","X-Large"],
+    "image": "../images/7.jpg",
+    "description": "Black 100% cotton Tshirt"
+
+  },
+  {
+    "id": 8,
+    "name": "Punisher Melting",
+    "category": "Men",
+    "brand": "Ctshirts",
+    "price": 499.99,
+    "stock": 20,
+    "size":["Small","Medium","Large","X-Large"],
+    "image": "../images/8.jpg",
+    "description": "Black 100% cotton Tshirt"
+  }
+  
+  
+]
